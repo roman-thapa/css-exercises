@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*added flex here and made contents in header center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -9,17 +13,36 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /* added margin to logo*/
+  margin: 10px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* added flex here to make lists align in line*/
+  display: flex;
 }
 
+/*added flex to left link and placed then in starting to the box*/
+.left-links{
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+/*added flex to right link and placed then in ending to the box*/
+.right-links{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+/*note for myself*** align-items and justify-contents that you want in any box should be applied right after display flex */
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  /*added margin to every link so that they won't stick together*/
+  margin-right: 10px;
 }
