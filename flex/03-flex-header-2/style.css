@@ -12,6 +12,13 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /*added flex here so a header like formate could be created and aligned them
+  in center vertically and gave space between each content and added 
+  a padding creating a space between content and border*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .profile-image {
@@ -45,4 +52,16 @@ a {
 
 ul {
   list-style-type: none;
+  /*used flex to make list appear in an box then added a gap of 15 px to give space 
+  between them*/
+  display: flex;
+  gap: 15px;
+}
+/* using newly created class made changes in them
+added a flex then pushed them to the end and gave a gap between them*/
+.end{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
