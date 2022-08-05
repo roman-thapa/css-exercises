@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /*arranged everything to center using text-align property*/
+  text-align: center;
 }
 
 img {
@@ -10,6 +12,19 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /*added a space between title and rest of the content*/
+  margin-bottom: 50px;
+}
+
+/*used flex properties to align content in box them aligned them at the center and gave a space between contents*/
+.content{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+/*used a newly created class and gave a max width to them*/
+.c-box{
+  max-width: 250px;
 }
 
 /* do not edit this footer */
