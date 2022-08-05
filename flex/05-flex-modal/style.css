@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .icon {
@@ -33,6 +36,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*using flex-shrink property to not let the icon shrink and being in its original form*/
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -51,6 +56,8 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  /*added margin to create space between button and other content*/
+  margin-top: 10px;
 }
 
 button.continue {
@@ -63,4 +70,16 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/*using the class created in html file aligning the header text and the x button in a line and adding a space between them*/
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*making font of header bigger and adding a space below it*/
+.header{
+  font-size: 20px;
+  margin-bottom: 10px;
 }
