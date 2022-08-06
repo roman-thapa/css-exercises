@@ -25,3 +25,12 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/*in this we used list-style which remove bullet point from ul tag*/
+ul{
+  list-style: none;
+}
+/*in this we used text-decoration which remove underline from anchor tag i.e. hyperlink*/
+a{
+  text-decoration: none;
+}
