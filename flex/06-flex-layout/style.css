@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*align text in center*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*giving padding to buttons*/
+  padding: 10px;
 }
 
 input {
@@ -33,4 +39,37 @@ ul{
 /*in this we used text-decoration which remove underline from anchor tag i.e. hyperlink*/
 a{
   text-decoration: none;
+  color: #666666;
+}
+
+/*arranging the header such that they are at the top of the page in a line and giving space in between them*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+/*arranging the footer such that they are in a line and giving space in between them and changing background color*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+}
+
+/*since links are in unordered list tag they are place in a new line using flex arranged them in line and gave gap between those links*/
+.left-links{
+  display: flex;
+  gap: 10px;
+}
+
+/*since links are in unordered list tag they are place in a new line using flex arranged them in line and gave gap between those links and since they are at the right side they were touching border of page thats why gave a padding there*/
+.right-links{
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+/*since i needed this content at the center i used flex properties and placed it in center*/
+.content{
+  flex: 1 1 auto;
 }
