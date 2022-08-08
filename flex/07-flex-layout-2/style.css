@@ -2,6 +2,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  /*using flex arranged them column wise and gave space-between them so that header and footer will stick to top and bottom*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -14,6 +18,10 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /*to arrange the footer at the center of the foot box used flex*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -25,4 +33,26 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  /*gave the margin and padding to the cards and defined height and width to make it as a card*/
+  margin: 50px;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+/*using newly ceated class modifying the content so that it use all the available space*/
+.content{
+  display: flex;
+  flex: 1;
+}
+
+/*removing the bullet points*/
+ul{
+  list-style: none;
+}
+
+/*using the newly created class arranging the cards so that they will use all the height and width assigned to them*/
+.box{
+  display: flex;
+  flex-wrap: wrap;
 }
