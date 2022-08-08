@@ -29,6 +29,8 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  /*keeping the side bar as it is without shrinking it*/
+  flex-shrink: 0;
 }
 
 .card {
@@ -42,7 +44,7 @@ body {
   height: 300px;
 }
 
-/*using newly ceated class modifying the content so that it use all the available space*/
+/*using newly created class modifying the content so that it use all the available space*/
 .content{
   display: flex;
   flex: 1;
@@ -57,4 +59,11 @@ ul{
 .box{
   display: flex;
   flex-wrap: wrap;
+}
+
+/*changing the color of hypertext and removing the underline and changing font size*/
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
