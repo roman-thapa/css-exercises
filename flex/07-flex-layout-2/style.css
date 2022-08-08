@@ -12,6 +12,8 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /*added a padding to the header*/
+  padding-left: 10px;
 }
 
 .footer {
