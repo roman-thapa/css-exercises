@@ -11,7 +11,7 @@ body, html {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 10%);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .container div {
